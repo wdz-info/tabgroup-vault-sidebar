@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "组备份",
+  "version": "1.0.0",
+  "description": "保存 Chrome 标签组、窗口和会话，之后再打开这些页面地址。",
+  "permissions": ["tabs", "tabGroups", "storage", "sidePanel"],
+  "host_permissions": ["https://www.googleapis.com/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "组备份"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}
